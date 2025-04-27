@@ -124,7 +124,7 @@ if st.button("Clear History"):
 with st.expander("📂 View Saved Passwords (Click to Show)", expanded=False):    
     if st.session_state.password_history:
         for i, pwd in enumerate(st.session_state.password_history, 1):
-            st.write(f"{i}.** {pwd}")
+            st.write(f"**{i}.** `{pwd}`")
     else:
             st.info("No passwords saved yet.")
 
